@@ -1,0 +1,725 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Courgette&family=DM+Sans:opsz@9..40&family=DM+Serif+Text&family=Emilys+Candy&family=Inter&family=Kalam:wght@700&family=Kdam+Thmor+Pro&family=Lato&family=Lora&family=Montserrat&family=Nosifer&family=Playfair+Display&family=Poppins&family=Roboto+Slab&family=Rubik+Wet+Paint&family=Sofia+Sans+Condensed&display=swap");
+
+.container {
+  width: 100%;
+  height: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.content {
+  margin: -180px auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 125px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1575px;
+  height: 1220px;
+  margin: auto;
+}
+
+/* textsection */
+
+.leftTextSection {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 700px;
+  height: 600px;
+  margin-top: 100px;
+
+  gap: 25px;
+}
+
+.leftTextSection h1 {
+  width: 700px;
+
+  font-family: "Actor", sans-serif;
+
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 0px;
+}
+
+.leftTextSection h1 span {
+  font-family: "Kdam Thmor Pro";
+  color: #ffdc3f;
+  font-weight: 900;
+}
+.leftTextSection p {
+  width: 600px;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 211.111% */
+}
+
+.leftTextSection button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 50px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 11px 20px 0px rgba(51, 99, 108, 0.08);
+}
+
+.leftTextSection button span {
+  color: #a61473;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.leftTextSection button:hover {
+  scale: 1.1;
+  background: yellow;
+}
+.leftTextSection button:hover span {
+  color: #000;
+}
+.leftTextSection svg {
+  position: absolute;
+  left: 160px;
+  margin-top: 25px;
+  transform: rotate(25deg);
+}
+
+.shopCon {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: auto;
+}
+
+/* reviewSection */
+
+.reviewSection {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 160px;
+  height: 59px;
+  gap: 10px;
+  margin-left: 355px;
+  margin-top: 38px;
+  position: absolute;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 160px;
+  height: 29px;
+}
+
+.top h5 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: none;
+}
+
+.top .line {
+  overflow: hidden;
+  display: flex;
+  padding-right: 5px;
+  height: 30px;
+  align-items: flex-start;
+  border-right: 0.5px solid #fff;
+}
+.bottom {
+  width: 160px;
+  padding-left: 5px;
+}
+.bottom h1 {
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* bigBook */
+
+.bigBook {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 695px;
+  height: 655px;
+  flex-shrink: 0;
+}
+
+.bigBook img {
+  margin-right: 120px;
+  position: absolute;
+  scale: 1.3;
+  width: 920px;
+  flex-shrink: 0;
+}
+
+/* cardss */
+
+.productcards {
+  position: absolute;
+  width: 100%;
+  max-width: 1575px;
+  height: 520px;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-end;
+  bottom: 0;
+  left: 0;
+}
+
+.toph1 h1 {
+  color: #ff9d34;
+  font-family: "Kdam Thmor Pro";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 76.5px; /* 136.607% */
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cards {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+}
+.card {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
+  border-radius: 10px;
+  background: var(
+    --gradients-accent,
+    linear-gradient(
+      147deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #fff
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 45px;
+  height: 381px;
+  width: 300px;
+  position: relative;
+  border: 1px solid black;
+}
+.card:hover {
+  scale: 1.02;
+}
+
+.cardRate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  width: 200px;
+
+  flex-direction: row;
+}
+
+.cardRate h2 {
+  width: 200px;
+  color: #64bc4c;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card h1 {
+  color: #910f38;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.priceAndButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  gap: 18px;
+}
+.priceAndButton h1 {
+  color: #000;
+  font-family: Lato;
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.priceAndButton h2 {
+  text-decoration-line: strikethrough;
+  color: #000;
+  font-family: Lato;
+  font-size: 18px;
+
+  font-weight: 500;
+}
+
+.priceAndButton button {
+  cursor: pointer;
+  display: flex;
+  padding: 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #ffddb8;
+  box-shadow: 2px 11px 20px 0px rgba(51, 99, 108, 0.15);
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.priceAndButton button span {
+  color: #64bc4c;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.priceAndButton button:hover {
+  scale: 1.1;
+  background: #910f38;
+  color: #fff;
+}
+.priceAndButton button:hover span {
+  color: #fff;
+}
+
+.card .novelimg {
+  margin-top: 10px;
+
+  width: 300px;
+  background: red;
+  z-index: 2;
+}
+.card .novelimg {
+  align-self: center;
+  width: auto;
+
+  height: 200px;
+  z-index: 1;
+}
+
+.card .circle {
+  width: 300px;
+  height: 220px;
+
+  position: absolute;
+  background: var(
+    --gradients-accent,
+    linear-gradient(
+      147deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.1) 80%
+    ),
+    #ffbf7a
+  );
+
+  z-index: 0;
+}
+
+/* media */
+/* media */
+/* media */
+/* media */
+/* media */
+/* media */
+/* media */
+
+@media (min-width: 1246px) and (max-width: 1600px) {
+  .container {
+    margin-top: 120px;
+  }
+  .content {
+    margin: -80px auto;
+  }
+  .bigBook img {
+    margin-left: 60px;
+    scale: 1.2;
+  }
+  .content {
+    gap: 0px;
+  }
+  .leftTextSection {
+    width: 700px;
+  }
+  .cards {
+    gap: 15px;
+  }
+  .card {
+    width: 280px;
+  }
+  .priceAndButton {
+    padding-right: 10px;
+    width: 255px;
+    gap: 15px;
+  }
+  .priceAndButton button {
+    width: 110px;
+  }
+
+  .priceAndButton h2 {
+    font-size: 15px;
+    width: 125px;
+  }
+  .leftTextSection h1 {
+    font-size: 40px;
+    width: 560px;
+  }
+  .leftTextSection p {
+    width: 440px;
+  }
+  .leftTextSection button {
+    padding: 15px 40px;
+  }
+  .bottom h1 {
+    font-size: 16px;
+  }
+
+  .leftTextSection svg {
+    position: absolute;
+    left: 120px;
+    margin-top: 18px;
+    transform: rotate(25deg);
+  }
+  .reviewSection {
+    margin-left: 315px;
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 1170px) and (max-width: 1245px) {
+  .content {
+    margin: -80px auto;
+  }
+  .bigBook img {
+    margin-left: -60px;
+    scale: 1.2;
+  }
+  .content {
+    gap: 0px;
+  }
+  .leftTextSection {
+    width: 700px;
+  }
+  .cards {
+    gap: 15px;
+  }
+  .card {
+    width: 260px;
+  }
+  .priceAndButton {
+    padding-right: 10px;
+    width: 235px;
+    gap: 15px;
+  }
+  .priceAndButton button {
+    width: 200px;
+    height: 40px;
+  }
+  .priceAndButton button span {
+    font-size: 16px;
+  }
+
+  .priceAndButton h2 {
+    font-size: 12px;
+    font-weight: bold;
+    width: 195px;
+  }
+  .leftTextSection h1 {
+    font-size: 40px;
+    width: 560px;
+  }
+  .leftTextSection p {
+    width: 440px;
+  }
+  .leftTextSection button {
+    padding: 15px 40px;
+  }
+  .bottom h1 {
+    font-size: 16px;
+  }
+
+  .leftTextSection svg {
+    position: absolute;
+    left: 120px;
+    margin-top: 18px;
+    transform: rotate(25deg);
+  }
+  .reviewSection {
+    margin-left: 315px;
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1175px) {
+  .content {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    gap: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: auto;
+  }
+  .bigBook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    height: 700px;
+  }
+  .bigBook img {
+    scale: 1.2;
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+
+  .leftTextSection {
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 480px;
+  }
+  .productcards {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    height: 900px;
+    padding: 0;
+  }
+
+  .productcards .toph1 h1 {
+    font-size: 45px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .cards {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 0;
+  }
+  .card {
+    width: 260px;
+  }
+  .priceAndButton {
+    padding-right: 10px;
+    width: 235px;
+    gap: 15px;
+  }
+  .priceAndButton button {
+    width: 200px;
+    height: 40px;
+  }
+  .priceAndButton button span {
+    font-size: 16px;
+  }
+
+  .priceAndButton h2 {
+    font-size: 12px;
+    font-weight: bold;
+    width: 195px;
+  }
+  .leftTextSection h1 {
+    font-size: 40px;
+    width: 560px;
+  }
+  .leftTextSection p {
+    width: 440px;
+  }
+  .leftTextSection button {
+    padding: 15px 40px;
+  }
+  .bottom h1 {
+    font-size: 16px;
+  }
+
+  .leftTextSection svg {
+    position: absolute;
+    left: 120px;
+    margin-top: 18px;
+    transform: rotate(25deg);
+  }
+  .reviewSection {
+    margin-left: 315px;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    margin-top: 150px;
+    height: 2000px;
+  }
+  .bigBook {
+    display: flex;
+
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    height: 700px;
+    margin-top: 425px;
+  }
+  .bigBook img {
+    scale: 1.2;
+    height: 700px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0;
+  }
+
+  .leftTextSection {
+    margin-bottom: 100px;
+    position: absolute;
+    margin: auto;
+    align-items: flex-start;
+    left: 0;
+    right: 0;
+    width: 95%;
+    max-width: 500px;
+    height: 100%;
+  }
+  .productcards {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    width: 100%;
+    height: 900px;
+    padding: 0;
+  }
+
+  .productcards .toph1 h1 {
+    font-size: 30px;
+    margin: auto;
+    width: 95%;
+
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .cards {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 0;
+  }
+  .card {
+    width: 100%;
+    max-width: 260px;
+  }
+  .priceAndButton {
+    padding-right: 10px;
+    width: 100%;
+    max-width: 235px;
+    gap: 10px;
+  }
+  .priceAndButton button {
+    margin-left: -20px;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+  }
+  .priceAndButton button span {
+    font-size: 16px;
+  }
+
+  .priceAndButton h2 {
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 195px;
+  }
+  .leftTextSection h1 {
+    font-size: 40px;
+    width: 100%;
+    max-width: 560px;
+  }
+  .leftTextSection p {
+    width: 100%;
+    max-width: 440px;
+  }
+  .leftTextSection button {
+    padding: 15px 40px;
+  }
+  .bottom h1 {
+    font-size: 16px;
+  }
+
+  .leftTextSection svg {
+    display: none;
+  }
+  .reviewSection {
+    margin-left: 215px;
+    margin-top: 2px;
+  }
+}

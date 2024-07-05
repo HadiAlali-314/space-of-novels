@@ -1,0 +1,10 @@
+.loading {
+  color: #fff;
+  font-size: 60px;
+  display: flex;
+  height: 800px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}

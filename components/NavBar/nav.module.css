@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=DM+Sans:opsz@9..40&family=DM+Serif+Text&family=Inter&family=Kalam:wght@700&family=Montserrat&family=Nosifer&family=Playfair+Display&family=Poppins&family=Roboto+Slab&family=Sofia+Sans+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=DM+Sans:opsz@9..40&family=DM+Serif+Text&family=Emilys+Candy&family=Inter&family=Kalam:wght@700&family=Montserrat&family=Nosifer&family=Playfair+Display&family=Poppins&family=Roboto+Slab&family=Rubik+Wet+Paint&family=Sofia+Sans+Condensed&display=swap");
+
+.container {
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  flex-direction: row;
+  padding: 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrapper {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  margin: auto;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1575px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 20px;
+}
+
+/* logo */
+
+.logoSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 950px;
+  height: 72px;
+
+  flex-direction: row;
+  gap: 5px;
+}
+.logoSection svg {
+  cursor: pointer;
+}
+
+.logoSection h1 {
+  width: 100%;
+  max-width: 280px;
+
+  cursor: pointer;
+
+  font-family: "Actor", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-right: 150px;
+}
+
+/* nav section */
+
+.navbar {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.navbar li {
+  cursor: pointer;
+  list-style: none;
+  font-size: 28px;
+
+  font-weight: 500;
+  font-family: "Actor", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.navbar li:hover {
+  color: #38bdf8;
+  scale: 1.1;
+}
+
+.myicon {
+  font-size: 23px;
+}
+.myicon2 {
+  font-size: 22px;
+}
+
+.myicon3 {
+  font-size: 27px;
+}
+
+/* serachbar */
+
+.searchbar {
+  cursor: pointer;
+  height: 50px;
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar input {
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  max-width: 330px;
+  height: 50px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  background: #003366;
+  font-family: "Emilys Candy";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 20px; /* 142.857% */
+  flex: 1 0 0;
+  border: none;
+}
+
+.searchbar input::placeholder {
+  cursor: pointer;
+  font-family: "Emilys Candy";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 20px; /* 142.857% */
+  flex: 1 0 0;
+}
+
+.searchicon {
+  cursor: pointer;
+  align-self: center;
+  margin-left: 270px;
+  font-size: 32px;
+  z-index: 1;
+}
+.searchicon:hover {
+  color: #38bdf8;
+  scale: 1.4;
+}
+
+/* rightside */
+
+.rightsection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  max-width: 120px;
+  height: 72px;
+}
+
+.rightsection svg {
+  cursor: pointer;
+}
+
+.rightside {
+  width: 100%;
+  max-width: 450px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper i {
+  display: none;
+}
+.myright {
+  font-size: 28px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* media */
+
+@media (min-width: 1246px) and (max-width: 1430px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1175px) and (max-width: 1247px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1245px;
+  }
+  .logoSection {
+    width: 100%;
+    max-width: 900px;
+  }
+  .navbar {
+    width: 100%;
+    max-width: 700px;
+  }
+  .rightside {
+    width: 100%;
+    max-width: 380px;
+
+    gap: 10px;
+  }
+  .searchbar input {
+    width: 100%;
+    max-width: 250px;
+  }
+  .searchicon {
+    margin-left: 180px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1179px) {
+  .navbar {
+    display: none;
+  }
+  .rightside {
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+  }
+  .searchsvg {
+    margin-left: 160px;
+  }
+  .searchbar {
+    width: 220px;
+  }
+  .searchbar input {
+    width: 100%;
+    max-width: 220px;
+  }
+  .rightsection {
+    margin-left: 0;
+    width: 100px;
+  }
+  .rightside i {
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    font-size: 40px;
+  }
+  .wrapper {
+    z-index: 3;
+  }
+  .navbar {
+    box-shadow: 0 0 80px rgba(14, 165, 233, 0.4);
+
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    margin-top: 80px;
+
+    display: flex;
+    opacity: 0.98;
+    backdrop-filter: blur(20px);
+    filter: saturate(150%);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .navbar ul {
+    padding: 20px 20px;
+    width: 400px;
+    height: 250px;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar li {
+    font-size: 31px;
+  }
+  .navbar li:hover {
+    scale: 1.1;
+  }
+}
+
+@media (max-width: 767px) {
+  .searchbar {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .rightside i {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 40px;
+  }
+  .rightside {
+    width: 100%;
+    max-width: 150px;
+  }
+  .wrapper {
+    z-index: 3;
+  }
+  .navbar {
+    box-shadow: 0 0 80px rgba(14, 165, 233, 0.4);
+
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    margin-top: 80px;
+
+    display: flex;
+    opacity: 0.98;
+    backdrop-filter: blur(20px);
+    filter: saturate(150%);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .navbar ul {
+    padding: 20px 20px;
+    width: 400px;
+    height: 250px;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar li {
+    font-size: 31px;
+  }
+  .navbar li:hover {
+    scale: 1.1;
+  }
+}
+
+@media (max-width: 500px) {
+  .logoSection {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+  }
+  .logoSection h1 {
+    font-size: 30px;
+  }
+  .wrapper {
+    z-index: 3;
+  }
+  .navbar {
+    box-shadow: 0 0 80px rgba(14, 165, 233, 0.4);
+
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    margin-top: 80px;
+
+    display: flex;
+    opacity: 0.98;
+    backdrop-filter: blur(20px);
+    filter: saturate(150%);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .navbar ul {
+    padding: 20px 20px;
+    width: 400px;
+    height: 250px;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar li {
+    font-size: 31px;
+  }
+  .navbar li:hover {
+    scale: 1.1;
+  }
+}
+@media (max-width: 463px) {
+  .logoSection {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+  }
+  .logoSection h1 {
+    display: none;
+  }
+  .wrapper {
+    z-index: 3;
+  }
+  .navbar {
+    box-shadow: 0 0 80px rgba(14, 165, 233, 0.4);
+
+    height: 250px;
+    max-width: 400px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    margin-top: 80px;
+
+    display: flex;
+    opacity: 0.98;
+    backdrop-filter: blur(20px);
+    filter: saturate(150%);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .navbar ul {
+    padding: 20px 20px;
+    width: 400px;
+    height: 250px;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar li {
+    font-size: 31px;
+  }
+  .navbar li:hover {
+    scale: 1.1;
+  }
+}
+
+.messageIconContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.messageCount {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+.messageContent ul {
+  z-index: 2;
+  box-shadow: 0 0 80px rgba(242, 255, 0, 0.4);
+  padding: 25px;
+  height: auto;
+  width: auto;
+  position: absolute;
+
+  right: 0;
+  top: 0;
+  margin-top: 80px;
+
+  display: flex;
+  opacity: 0.98;
+  backdrop-filter: blur(20px);
+  filter: saturate(150%);
+  flex-wrap: wrap;
+
+  background-color: rgba(44, 43, 43, 0.9);
+}
+.messageContent ul li {
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  list-style-type: none;
+}
+.messageContent ul li:hover {
+  color: #ffdc3f;
+  scale: 1.02;
+}

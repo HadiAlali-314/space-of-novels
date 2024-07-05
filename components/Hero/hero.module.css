@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=DM+Sans:opsz@9..40&family=DM+Serif+Text&family=Inter&family=Kalam:wght@700&family=Montserrat&family=Nosifer&family=Playfair+Display&family=Poppins&family=Roboto+Slab&family=Sofia+Sans+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=DM+Sans:opsz@9..40&family=DM+Serif+Text&family=Emilys+Candy&family=Inter&family=Kalam:wght@700&family=Montserrat&family=Nosifer&family=Playfair+Display&family=Poppins&family=Roboto+Slab&family=Rubik+Wet+Paint&family=Sofia+Sans+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Courgette&family=DM+Sans:opsz@9..40&family=DM+Serif+Text&family=Emilys+Candy&family=Inter&family=Kalam:wght@700&family=Kdam+Thmor+Pro&family=Lora&family=Montserrat&family=Nosifer&family=Playfair+Display&family=Poppins&family=Roboto+Slab&family=Rubik+Wet+Paint&family=Sofia+Sans+Condensed&display=swap");
+/* hero section */
+.container {
+  width: 100%;
+  margin: auto;
+  height: 800px;
+}
+
+.content {
+  align-items: center;
+  z-index: 1;
+  width: 1575px;
+  height: 800px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: row;
+}
+
+/* leftside  leftside */
+.leftside {
+  padding: 10px 10px;
+  margin: 180px 0;
+  width: 700px;
+  height: 450px;
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.leftside h1 span {
+  font-family: "Kdam Thmor Pro";
+
+  letter-spacing: 0px;
+}
+.leftside h1 {
+  font-family: "Actor", sans-serif;
+
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -2px;
+}
+.leftside h2 {
+  font-family: "Actor", sans-serif;
+  color: #a1a1aa;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 5px;
+  letter-spacing: -1.5px;
+}
+
+/* buttons */
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.leftside button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: #0ea5e9;
+
+  border-radius: 32px;
+  width: 204px;
+  height: 58px;
+}
+.leftside button:hover {
+  scale: 1.1;
+}
+
+.buttons button span {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.buttons button:hover {
+  scale: 1.1;
+}
+.buttons button:nth-child(2) {
+  width: 150px;
+  height: 58px;
+  background: none;
+  border: 2px solid #003366;
+}
+.buttons button:nth-child(2) span {
+  font-size: 20px;
+}
+
+/* rightside */
+.rightside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+  width: 900px;
+  height: auto;
+}
+.rightside video {
+  box-shadow: 0 0 80px rgba(14, 165, 233, 0.4);
+
+  border-radius: 150px;
+  width: 100%;
+  height: auto;
+}
+
+/* media */
+/* media */
+/* media */
+/* media */
+/* media */
+/* media */
+@media (min-width: 1246px) and (max-width: 1600px) {
+  .content {
+    width: 100%;
+    max-width: 1430px;
+    height: auto;
+
+    flex-direction: column;
+    gap: 50px;
+  }
+  .leftside {
+    margin: auto;
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+
+  .rightside video {
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1170px) and (max-width: 1245px) {
+  .content {
+    width: 100%;
+    max-width: 1430px;
+    height: auto;
+
+    flex-direction: column;
+    gap: 10px;
+  }
+  .leftside {
+    margin: auto;
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .rightside video {
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1175px) {
+  .content {
+    width: 100%;
+    max-width: 1430px;
+
+    flex-direction: column;
+
+    height: 100vh;
+  }
+  .leftside {
+    position: absolute;
+    margin: auto;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .rightside video {
+    width: 100%;
+    max-width: 740px;
+    position: absolute;
+    margin: auto;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+    max-width: 1430px;
+
+    flex-direction: column;
+    height: 1450px;
+  }
+  .leftside {
+    position: absolute;
+    margin: auto;
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+
+  .rightside video {
+    width: 100%;
+    max-width: 680px;
+    position: absolute;
+
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+  }
+}
